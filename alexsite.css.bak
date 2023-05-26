@@ -1,0 +1,194 @@
+body {
+	margin : 0;
+	background : linear-gradient(to bottom, bisque, peru);
+	background-attachment : fixed;
+}
+
+header {
+	background : midnightBlue;
+	height : 175px;
+}
+
+h1 {
+	width : max-content;
+	margin-top : 0;
+	margin-left : auto;
+	margin-right : auto;
+	padding-top : 10px;
+	padding-left : 36px;
+	font-family : Lobster;
+	font-size : 40px;
+	color : aqua;
+	cursor : default;
+}
+
+nav ul {
+	display : flex;
+	justify-content : space-evenly;
+}
+
+nav ul li {
+	border : 2px solid white;
+	border-radius : 40px;
+	min-width : 100px;
+	text-align : center;
+	padding : 10px;
+	list-style-type : none;
+	color : white;
+	font : 24px Montserrat;
+	cursor : pointer;
+	transition : 1s;
+}
+
+article {
+	height : 482px;
+	background : lavender;
+	box-sizing : border-box;
+}
+
+article h2 {
+	font : 28px Montserrat;
+	font-weight : 600;
+	padding : 40px;
+	border-bottom : 2px dotted midnightBlue;
+	margin-top : 0;
+}
+
+article p {
+	font : 23px Montserrat;
+	line-height : 1.4em;
+	text-align : justify;
+	padding : 20px 40px 40px 40px;
+}
+
+.winter {
+	width : 486px;
+	float : left;
+	padding-right : 30px;
+}
+
+.object {
+	border : 3px solid #202020;
+	background : #202020;
+}
+
+.object p {
+	font : 30px Bebas Neue;
+	color : beige;
+	margin-top : 12px;
+	padding-left : 20px;
+	cursor : default;
+}
+
+.object .description {
+	font : 20px Montserrat;
+	cursor : default;
+}
+
+.object .view {
+	font : 20px Montserrat;
+	margin-top : 15px;
+	margin-left : 20px;
+	border : 3px solid beige;
+	width : max-content;
+	padding : 10px;
+	cursor : pointer;
+	transition : 1s;
+}
+
+.object-photo {
+	width : 100%;
+	height : 330px;
+}
+
+.article-photo {
+	width : 480px;
+	height : 325px;
+	float : left;
+	padding-right : 20px;
+}
+
+.article-photo2 {
+	width : 480px;
+	height : 380px;
+	float : right;
+}
+
+.about-article {
+	background : #008080;
+	border-bottom : 5px double black;
+	height : 330px;
+	font : 25px Montserrat;
+	line-height : 1.4em;
+	box-sizing : border-box;
+}
+
+.about-article h3 {
+	margin-top : 0;
+	padding-bottom : 20px;
+	border-bottom : 3px dotted black;
+}
+
+.about-article2 {
+	background : #A050A0;
+	height : 390px;
+	font : 25px Montserrat;
+	line-height : 1.4em;
+	box-sizing : border-box;
+}
+
+.about-article2 h3 {
+	margin-top : 0;
+	padding-top : 20px;
+	padding-bottom : 20px;
+	border-bottom : 3px dotted black;
+}
+
+.other-text {
+	padding : 20px;
+}
+
+#box1 {
+	display : block;
+}
+
+#box2 {
+	display : none;
+}
+
+#box3 {
+	display : none;
+}
+
+#grid-wrapper {
+	display : grid;
+	grid-template-rows : 1fr 1fr;
+	grid-template-columns : 1fr 1fr 1fr;
+	grid-gap : 50px;
+	padding : 1%;
+}
+
+nav ul li:hover {
+	color : midnightBlue;
+	background : white;
+}
+
+.object .view:hover {
+	color : #202020;
+	background : beige;
+}
+
+@font-face {
+	src : url('lobster.ttf');
+	font-family : Lobster;
+}
+
+@font-face {
+	src : url('montserrat.ttf');
+	font-family : Montserrat;
+}
+
+@font-face {
+	src : url('bebasneue.ttf');
+	font-family : Bebas Neue;
+}
