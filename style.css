@@ -63,8 +63,10 @@ article p {
 
 .winter {
 	width : 486px;
+	min-height : max-content;
 	float : left;
 	padding-right : 30px;
+	display : block;
 }
 
 .object {
@@ -148,6 +150,26 @@ article p {
 	padding : 20px;
 }
 
+.popup-image {
+	display : block;
+	width : 550px;
+	max-height : 550px;
+	margin : auto;
+}
+
+.back {
+	border : 3px solid chocolate;
+	padding : 12px;
+	margin-left : auto;
+	margin-right : auto;
+	margin-top : 20px;
+	color : beige;
+	width : max-content;
+	font : 32px Montserrat;
+	cursor : default;
+	transition : all 0.6s ease;
+}
+
 #box1 {
 	display : block;
 }
@@ -168,6 +190,16 @@ article p {
 	padding : 1%;
 }
 
+#popup1, #popup2, #popup3, #popup4, #popup5, #popup6 {
+	display : none;
+	position : absolute;
+	top : 0;
+	left : 0;
+	background : black;
+	width : 100%;
+	height : 100%;
+}
+
 nav ul li:hover {
 	color : midnightBlue;
 	background : white;
@@ -176,6 +208,10 @@ nav ul li:hover {
 .object .view:hover {
 	color : #202020;
 	background : beige;
+}
+
+.back:hover {
+	background : chocolate;
 }
 
 @font-face {
@@ -191,4 +227,76 @@ nav ul li:hover {
 @font-face {
 	src : url('bebasneue.ttf');
 	font-family : Bebas Neue;
+}
+
+@media screen and (max-width : 1100px) {
+article h2 {
+	font-size : 25px;
+	padding-top : 15px;
+	padding-bottom : 15px;
+	text-align : center;
+ }	
+ 
+article p {
+	padding-top : 0;
+ }	
+}
+
+@media screen and (max-width : 950px) {
+.winter {
+	width : 420px;
+	height : 482.5px;
+ }	
+ 
+.object-photo {
+	width : 100%;
+	height : 250px;
+ } 
+}
+
+@media screen and (max-width : 880px) {
+article {
+	height : max-content;
+	padding-bottom : 3px;
+}
+
+article h2 {
+    padding-top : 30px;
+	padding-bottom : 30px;
+}
+
+article p {
+	margin-top : 40px;
+	margin-bottom : 40px;
+	font-size : 25px;
+	line-height : 1.6em;
+}
+	
+.winter {
+	width : 100%;
+	height : 750px;
+	float : none;
+ }	
+ 
+@media screen and (max-width : 780px) {
+#grid-wrapper {
+	display : grid;
+	grid-template-rows : 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns : 1fr;
+ }	
+ 
+.object-photo {
+	width : 100%;
+	height : 80%;
+ } 
+ 
+.object p, .description {
+	text-align : center;
+	padding-top : 12px;
+	box-sizing : border-box;
+ }	
+ 
+.view {
+	display : none;
+ }	
 }
