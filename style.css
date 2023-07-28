@@ -33,7 +33,7 @@ nav ul li {
 	min-width : 100px;
 	text-align : center;
 	padding : 10px;
-	list-style-type : none;
+	list-style : none;
 	color : white;
 	font : 24px Montserrat;
 	cursor : pointer;
@@ -54,6 +54,10 @@ article h2 {
 	margin-top : 0;
 }
 
+article hr {
+	display : none;
+}
+
 article p {
 	font : 23px Montserrat;
 	line-height : 1.4em;
@@ -72,6 +76,7 @@ article p {
 .object {
 	border : 3px solid #202020;
 	background : #202020;
+	height : max-content;
 }
 
 .object p {
@@ -299,4 +304,76 @@ article p {
 .view {
 	display : none;
  }	
+}
+
+@media screen and (max-width : 550px) {
+	body {
+		background : linear-gradient(to bottom, #202530, midnightBlue);
+	}
+	
+	h1 {
+		padding-left : 0;
+	}
+	
+	nav ul {
+		padding : 0;
+	}
+	
+	nav ul li {
+		font-size : 20px;
+		min-width : 70px;
+	}
+	
+	article p {
+		font-size : 22px;
+	}
+	
+	article h2 {
+		border-bottom-style : none;
+	}
+	
+	article hr {
+		display : block;
+		width : 75%;
+		border : 1px solid black;
+	}
+	
+	.winter {
+		height : 400px;
+		width : 100%;
+		padding : 0;
+	}
+	
+	.article-photo, .article-photo2 {
+		width : 100%;
+		height : 80%;
+		float : none;
+	}
+	
+	.about-article, .about-article2 {
+		height : max-content;
+		padding-bottom : 20px;
+		text-align : justify;
+		font-size : 22px;
+	}
+	
+	.about-article img {
+		padding : 0;
+	}
+	
+	.about-article h2 {
+		text-align : center;
+		border-bottom-style : solid;
+		border-bottom-width : 2px;	
+	}
+	
+	.about-article h3, .other-text h3 {
+		text-align : center;
+		border-bottom-style : solid;
+		border-bottom-width : 2px;
+	}
+	
+	#grid-wrapper {
+		padding : 0%;
+	}
 }
